@@ -1,0 +1,22 @@
+<p>Tasks</p>
+<button (click) = "getTasks()">Get tasks</button>
+
+<div *ngFor = "let task of allTasks">
+    <div style="padding: 10px; margin-bottom: 10px;">
+        <div>
+            Task title: {{task.title}}
+        </div>
+        <div>
+            Task description: {{task.description}}
+        </div>
+        <div>
+            Task completed : {{task.completed}}
+        </div>
+        <div>
+            Task created at: {{task.created_at}}
+        </div>
+        <div>
+            Task updated at: {{task.created_at}}
+        </div>
+    </div>
+</div>
